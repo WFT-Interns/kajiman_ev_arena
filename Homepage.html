@@ -13,12 +13,12 @@
 <body>
     <div class="Navbar">
         <div class="logo">
-            <img src="logo.png" alt="logo"/>
+            <img src="Assets/Images/logo.png" alt="logo"/>
         </div>
         
         <!-- logo and map Station -->
         <div class="charging_station">
-             <img src="location-01.png" alt="location-icon"/>
+             <img src="Assets/Images/location-01.png" alt="location-icon"/>
              <div class="nameandlocation">
                 <p>
                     Nearest Charging Station
@@ -48,14 +48,17 @@
         <!-- search bar -->
 
         <div class="Navbar_search">
-            <img src="Vector.svg" alt="search"/>
+            <img src="Assets/Images/Vector.svg" alt="search"/>
         </div>
 
 
         <!-- For mobile devices -->
+        <div class="menu_bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
 
-    <!-- landing page or home page ko body -->
+    <!-- landing page or home page body -->
 
     <div class="video_section">
          <div class="Heading">
@@ -63,7 +66,7 @@
             <h1 style="font-weight:1000px;color:white;font-size:75px;">
                 Compare
             </h1>
-            <p style="color:darkgreen;margin:20px;margin-bottom:0;font-size:0px;font-weight:800;">&</p>
+            <p style="color:darkgreen;margin:20px;font-size:0px;font-weight:800;">&</p>
             <h1 style="font-weight: 1000px;color:white;font-size:65px;"> Drive</h1>
            </div>
             <div class=" slogan">
@@ -77,7 +80,7 @@
          </div>
     </div>
 
-    <!-- slider section ko lagi ho  -->
+    <!-- slider section -->
     <div class="second-section">
          <h1 style="margin-left:5%;">Top Selling EVs Of 2022</h1>
          <div class="car_list">
@@ -94,12 +97,6 @@
              </ul>
          </div>
          
-         <!-- <div class="cars_images">
-             <img src="tesla.jpg" alt="tesla"/>
-             <button>
-                <h1 style="color:black">Compare</h1>
-             </button>
-         </div> -->
     </div>
 
     <!-- slider section -->
@@ -109,16 +106,16 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="tesla.jpg" alt="tesla"/></div>
-                <div class="swiper-slide"><img src="audi.jpg" alt="audi"/></div>
-                <div class="swiper-slide"><img src="bmw.jpg" alt="bmw"/></div>
-                <div class="swiper-slide"><img src="porsche.jpg" alt="porsche"/></div>
-                
+                <div class="swiper-slide"><img src="Assets/Images/tesla.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="Assets/Images/porsche.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="Assets/Images/bmw.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="Assets/Images/audi.jpg" alt=""/></div>
+    
                 </div>
-                <!-- If we need pagination -->
+                <!-- for pagination -->
                 <div class="swiper-pagination"></div>
             
-                <!-- If we need navigation buttons -->
+                <!-- for  navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                  
@@ -129,7 +126,8 @@
                  </button>
             </div>
            </div>
-    <!-- footer section ko lagi -->
+
+    <!-- footer section  -->
 
     <div class="footer">
        <div class="footer_list">
@@ -152,7 +150,7 @@
         </ul>
        </div>
       <div class="footer_logo">
-          <img src="logo2.png" alt="footer-logo"/>
+          <img src="Assets/Images/logo2.png" alt="footer-logo"/>
           <div class="rights">
             <div class="c">
                 <p style="font-weight:bold">C</p>
@@ -161,7 +159,7 @@
           </div>
       </div>
 
-      <!-- social icon haru ko lagi -->
+      <!-- social icon for footer section -->
       <div class="social">
         <div class="social_icon">
            <i class="fa-brands fa-facebook"></i>
@@ -176,29 +174,8 @@
     <script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- swiper ko initialization hai -->
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            autoplay:{
-                delay:3000,
-                disableOnInteraction:false,
-            },
-            loop:true,
-          
-            // If we need pagination
-            pagination: {
-              el: '.swiper-pagination',
-              clickable:true,
-            },
-          
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          });
-    </script>
+    <!-- swiper initialization -->
+    <script src="slider.js"></script>
 
 
 </body>

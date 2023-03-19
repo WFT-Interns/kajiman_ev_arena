@@ -10,7 +10,7 @@ body{
      flex-direction: column;
 }
 
-/* navbar wala ko sabai css yaha xa */
+/* navbar css  */
 .Navbar{
     height:80px ;
     width: 98%;
@@ -63,8 +63,7 @@ body{
         display:none;
     }
 }
-ul{
-    display: flex;
+ul{  
     
     text-decoration: none;
     
@@ -95,6 +94,11 @@ li{
         display:none;
     }
 }
+li:hover{
+    font-size:20px;
+    color: green;
+}
+
 .Navbar_search{
     flex: 1;
 
@@ -107,7 +111,7 @@ li{
     }
 }
 
-/* homesection ko video wala ho yo */
+/* homesection video css*/
 .video_section{
 
     height: 700px;
@@ -115,7 +119,7 @@ li{
 
     margin: auto;
 
-    background-image: url(gadi.gif);
+    background-image: url(Assets/Images/gadi.gif);
     background-repeat: no-repeat;
     background-size:100%;
 
@@ -168,7 +172,7 @@ li{
     align-items:center;
 }
 
-/* slider ko lagi */
+/* For slider*/
 .slider_effect{
     height: 900px;
     width:100%;
@@ -204,9 +208,17 @@ button{
 
     background-color: white;
 }
+button:hover{
+    height: 60px;
+    width: 330px;
 
+    font-size:20px;
+    color: aliceblue;
 
-/* footer ko lagi */
+    background-color: green;
+}
+
+/* for footer*/
 .footer{
     width: 98%;
     height: 280px;

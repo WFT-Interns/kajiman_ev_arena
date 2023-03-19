@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ev-Arena</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div class="Navbar">
+        <div class="logo">
+            <img src="logo.png" alt="logo"/>
+        </div>
+        
+        <!-- logo and map Station -->
+        <div class="charging_station">
+             <img src="location-01.png" alt="location-icon"/>
+             <div class="nameandlocation">
+                <p>
+                    Nearest Charging Station
+                 </p><br>
+                 <h3 style="font-weight:900px;margin-top:-30px;">Kathmandu</h3>
+             </div>
+        </div>
+
+        <!-- list of navbar like home and all -->
+        <div class="Navbar_list">
+             <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    Ev Finder
+                </li>
+                <li>
+                    Compare 
+                </li>
+                <li>
+                    Browse
+                </li>
+             </ul>
+        </div>
+
+        <!-- search bar -->
+
+        <div class="Navbar_search">
+            <img src="Vector.svg" alt="search"/>
+        </div>
+
+
+        <!-- For mobile devices -->
+        <div class="menu_bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- landing page or home page ko body -->
+
+    <div class="video_section">
+         <div class="Heading">
+           <div class="heading_first">
+            <h1 style="font-weight:1000px;color:white;font-size:75px;">
+                Compare
+            </h1>
+            <p style="color:darkgreen;margin:20px;margin-bottom:0;font-size:0px;font-weight:800;">&</p>
+            <h1 style="font-weight: 1000px;color:white;font-size:65px;"> Drive</h1>
+           </div>
+            <div class=" slogan">
+                <h4 style="font-size: 30px;color:white;margin-top:-30px;">
+                    Away The Best EV For You
+                </h4>
+            </div>
+            <div class="why_ev">
+                <h4 style="color:white;font-size:30px;">Why Choose EV</h4>
+            </div>
+         </div>
+    </div>
+
+    <!-- slider section ko lagi ho  -->
+    <div class="second-section">
+         <h1 style="margin-left:5%;">Top Selling EVs Of 2022</h1>
+         <div class="car_list">
+            <ul>
+                <li>
+                    Cars
+                </li>
+                <li>
+                    Bike
+                </li>
+                <li>
+                    Scooter
+                </li>
+             </ul>
+         </div>
+         
+         <!-- <div class="cars_images">
+             <img src="tesla.jpg" alt="tesla"/>
+             <button>
+                <h1 style="color:black">Compare</h1>
+             </button>
+         </div> -->
+    </div>
+
+    <!-- slider section -->
+    <!-- Slider main container -->
+           <div class="slider_effect">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="tesla.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="tesla.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="tesla.jpg" alt=""/></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                 
+            </div>
+            <div class="compare_button">
+                <button>
+                    <h1 style="color:black">Compare</h1>
+                 </button>
+            </div>
+           </div>
+    <!-- footer section ko lagi -->
+
+    <div class="footer">
+       <div class="footer_list">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                EV Finder
+            </li>
+            <li>
+                Compare
+            </li>
+            <li>
+                Browse
+            </li>
+            <li>
+                News
+            </li>
+        </ul>
+       </div>
+      <div class="footer_logo">
+          <img src="logo2.png" alt="footer-logo"/>
+          <div class="rights">
+            <div class="c">
+                <p style="font-weight:bold">C</p>
+            </div>
+            <p style="color:white;font-weight:bold">All Right Reserved 2023</p>
+          </div>
+      </div>
+
+      <!-- social icon haru ko lagi -->
+      <div class="social">
+        <div class="social_icon">
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-youtube"></i>
+        </div>
+        <h3>WaterFlow Technology</h3>
+        <p>Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0133e98403.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- swiper ko initialization hai -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay:{
+                delay:3000,
+                disableOnInteraction:false,
+            },
+            loop:true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              clickable:true,
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+    </script>
+
+
+</body>
+</html>

@@ -17,24 +17,20 @@
         width: 100vh;
     }
 }
-li{
+.footer_list li{
     color: white;
     padding-top: 15px;
     margin-left: 10px;
 
     text-decoration: none;
-
-    font-style: none;
     
 }
-ul{
+.footer_list ul{
     display: flex;
     justify-content: center;
     align-items:flex-start;
 
     flex-direction: column;
-
-    text-decoration: none;
 }
 /* for tablet view of footer list */
 @media screen and (max-width:768px){

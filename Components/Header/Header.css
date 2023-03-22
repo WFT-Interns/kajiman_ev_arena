@@ -1,0 +1,157 @@
+/* navbar css  */
+.Navbar{
+    height:80px ;
+    width: 98%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    top:0;
+    overflow-y:auto;
+    overflow-x: hidden;
+    
+    z-index: 10;
+    position:sticky;
+    background-color: white;
+
+}
+/* for mobile view of navbar */
+@media screen and (max-width:640px){
+    .Navbar{
+        width: 100%;
+
+        top: 0;
+
+        position:fixed;
+
+        z-index: 10;
+
+    }
+}
+
+
+.charging_station{
+        height: 74px;
+        width: 248px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+}
+/* for mobile view of charging station*/
+@media screen and (max-width:640px){
+    .charging_station{
+        display: none;
+    }
+}
+
+
+.nameandlocation{
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0;
+}
+
+
+.Navbar-list{
+    height: 74px;
+    width: 547px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width:320px){
+        display:none;
+    }
+}
+ul{  
+    
+    text-decoration: none;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
+
+    
+    @media screen and (min-width:320px){
+        display:none;
+    }
+}
+li{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
+
+    padding-left: 50px;
+}
+ /* for tablet view of navbar list */
+@media screen and (max-width:768px){
+    .Navbar_list{
+        display: none;
+    }
+} 
+li:hover{
+    font-size:20px;
+    color: green;
+}
+
+
+
+.Navbar_search{
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+ /* for mobile view */
+@media screen and (max-width:640px){
+    .Navbar_search{
+        display: none;
+    }
+} 
+ /* for Tablet view */
+ @media screen and (max-width:768px){
+    .Navbar_search{
+        display: none;
+    }
+} 
+/* For mobile devices */
+
+.menu_bar{
+    margin-right: 30px;
+    flex: 1;
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 
+for menu bar */
+@media screen and (min-width:1024px){
+    .menu_bar{
+        display: none;
+    }
+}

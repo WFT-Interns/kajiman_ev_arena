@@ -1,13 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-}
-.Home{
-     height: 100%;
-     width: 100%;
-     
-     display: flex;
-     flex-direction: column;
+    
+    width: 100%;
 }
 
 /* navbar css  */
@@ -30,6 +25,21 @@ body{
     background-color: white;
 
 }
+/* for mobile view of navbar */
+@media screen and (max-width:640px){
+    .Navbar{
+        width: 100%;
+
+        top: 0;
+
+        position:fixed;
+
+        z-index: 10;
+
+    }
+}
+
+
 .charging_station{
         height: 74px;
         width: 248px;
@@ -40,6 +50,14 @@ body{
 
 
 }
+/* for mobile view of charging station*/
+@media screen and (max-width:640px){
+    .charging_station{
+        display: none;
+    }
+}
+
+
 .nameandlocation{
     margin-left: 5px;
 
@@ -50,6 +68,8 @@ body{
 
     padding: 0;
 }
+
+
 .Navbar-list{
     height: 74px;
     width: 547px;
@@ -88,16 +108,19 @@ li{
     align-content: space-between;
 
     padding-left: 50px;
-
-    
-    @media screen and (min-width:320px){
-        display:none;
-    }
 }
+ /* for tablet view of navbar list */
+@media screen and (max-width:768px){
+    .Navbar_list{
+        display: none;
+    }
+} 
 li:hover{
     font-size:20px;
     color: green;
 }
+
+
 
 .Navbar_search{
     flex: 1;
@@ -105,11 +128,21 @@ li:hover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
-    @media screen and (max-width:320px){
-        display:none;
-    }
 }
+ /* for mobile view */
+@media screen and (max-width:640px){
+    .Navbar_search{
+        display: none;
+    }
+} 
+ /* for Tablet view */
+ @media screen and (max-width:768px){
+    .Navbar_search{
+        display: none;
+    }
+} 
+
+
 
 /* homesection video css*/
 .video_section{
@@ -119,7 +152,7 @@ li:hover{
 
     margin: auto;
 
-    background-image: url(Assets/Images/gadi.gif);
+    background-image: url(../../Assets/Images/gadi.gif);
     background-repeat: no-repeat;
     background-size:100%;
 
@@ -127,6 +160,25 @@ li:hover{
     justify-content: center;
     align-items: center;
 }
+/* for mobile view of video section */
+@media screen and (max-width:640px){
+    .video_section{
+        width:100vh;
+        margin-top:80px;
+
+        background-size: 100%;
+
+        margin-left: 15px;
+    }
+}
+/* for mobile view of video section */
+@media screen and (max-width:768px){
+    .video_section{
+        margin-left: 20px;
+    }
+}
+
+
 .Heading{
     height: 100%;
     width: 100%;
@@ -137,12 +189,22 @@ li:hover{
 
     flex-direction: column;
 }
+/* for heading section and tablet view*/
+ @media screen and (max-width:768px){
+    .Heading{
+        margin-top: -300px;
+    }
+} 
+
+
 .heading_first{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+
 .why_ev{
     height: 70px;
     width: 320px;
@@ -157,6 +219,21 @@ li:hover{
     
     border-radius: 10px;
 }
+/* for mobile view of why ev section */
+@media screen and (max-width:640px){
+    .why_ev{
+        margin-top:-30px;
+    }
+}
+/* for tablet view of why ev section */
+@media screen and (max-width:768px){
+    .why_ev{
+        height: 60px;
+        width: 300px;
+    }
+}
+
+
 .second-section{
     display: flex;
     justify-content: center;
@@ -164,6 +241,19 @@ li:hover{
 
     flex-direction: column;
 }
+/* for second section and tablet view*/
+@media screen and (max-width:768px){
+    .second-section{
+        margin-top: -250px;
+    }
+} 
+/* for mobile view of second-section */
+@media screen and (max-width:640px){
+    .second-section{
+        width: 100vh;
+    }
+}
+
 .car_list{
     width: 100%;
 
@@ -171,6 +261,13 @@ li:hover{
     justify-content:center;
     align-items:center;
 }
+/* for car list and tablet view*/
+@media screen and (max-width:768px){
+    .car_list ul{
+        margin-left: -50px;
+    }
+} 
+
 
 /* For slider*/
 .slider_effect{
@@ -183,17 +280,36 @@ li:hover{
 
     flex-direction: column;
 }
+
+/* for tablet view of slider */
+@media screen and (max-width:768px){
+    .slider_effect{
+        height: 600px;
+        width: 100%;
+
+        margin-left: 15px;
+    }
+}
+/* for mobile view of slider */
+@media screen and (max-width:640px){
+    .slider_effect{
+        height: 600px;
+        width: 100vh;
+
+        margin-left: 15px;
+    }
+}
+
 .swiper {
     height:80%;
     width:100%;
     object-fit: cover;
 }
-
-
 .swiper-slide img{
     height: 100%;
     width: 100%;
 }
+
 
 button{
     margin: 50px;
@@ -208,6 +324,22 @@ button{
 
     background-color: white;
 }
+/* for tablet view of button */
+@media screen and (max-width:768px){
+    button{
+        height: 50px;
+        width: 280px;
+
+    }
+}
+/* for tablet view of button text*/
+@media screen and (max-width:768px){
+    button h1{
+       font-size: 30px;
+       font-weight: 700;
+
+    }
+}
 button:hover{
     height: 60px;
     width: 330px;
@@ -217,6 +349,7 @@ button:hover{
 
     background-color: green;
 }
+
 
 /* for footer*/
 .footer{
@@ -229,6 +362,12 @@ button:hover{
     align-items:center;
 
     padding-right: 30px;
+}
+/* for mobile view of footer */
+@media screen and (max-width:640px){
+    .footer{
+        width: 100vh;
+    }
 }
 .footer_list li{
     color: white;
@@ -243,6 +382,13 @@ button:hover{
 
     flex-direction: column;
 }
+/* for tablet view of footer list */
+@media screen and (max-width:768px){
+    .footer_list li{
+        margin-left: -40px;
+
+    }
+}
 .footer_logo{
 
     display: flex;
@@ -251,7 +397,21 @@ button:hover{
 
     flex-direction: column;
 }
+/* for tablet view of footer logo */
+@media screen and (max-width:768px){
+    .footer_logo{
+        margin-left: 50px;
 
+    }
+}
+/* for tablet view of footer logo */
+@media screen and (max-width:768px){
+    .footer_logo img{
+        height: 40px;
+        width: 220px;
+
+    }
+}
 .c{
     height: 30px;
     width: 30px;
@@ -281,10 +441,25 @@ button:hover{
     font-size: 30px;
     padding: 10px;
 }
+/* for tablet view of social icon */
+@media screen and (max-width:768px){
+    .social_icon i{
+        font-size: 20px;
+        padding: 5px;
+
+    }
+}
 
 .social h3{
     color: white;
 
+}
+/* for tablet view of social */
+@media screen and (max-width:768px){
+    .social{
+        font-size: 10px;
+
+    }
 }
 .social p{
     margin-top: 1px;
@@ -294,11 +469,21 @@ button:hover{
 /* For mobile devices */
 
 .menu_bar{
-    height: 30px;
-    width: 30px;
+    margin-right: 30px;
+    flex: 1;
+
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+/* 
+for menu bar */
+@media screen and (min-width:1024px){
+    .menu_bar{
+        display: none;
+    }
 }
